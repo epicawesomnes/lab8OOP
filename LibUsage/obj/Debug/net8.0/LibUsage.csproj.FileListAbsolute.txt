@@ -16,3 +16,4 @@ E:\uni\OP 2\lab8\LibUsage\obj\Debug\net8.0\refint\LibUsage.dll
 E:\uni\OP 2\lab8\LibUsage\obj\Debug\net8.0\LibUsage.pdb
 E:\uni\OP 2\lab8\LibUsage\obj\Debug\net8.0\LibUsage.genruntimeconfig.cache
 E:\uni\OP 2\lab8\LibUsage\obj\Debug\net8.0\ref\LibUsage.dll
+E:\uni\OP 2\lab8\LibUsage\obj\Debug\net8.0\LibUsage.sourcelink.json

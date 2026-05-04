@@ -17,9 +17,9 @@ class Program
         
         LibrarySys library = new LibrarySys();
 
-        Student student1 = new Student("Олег", "Авраменко", "КІ-21");
-        Student student2 = new Student("Ірина", "Коваленко", "КІ-22");
-        Student student3 = new Student("Анна", "Петренко", "КІ-21");
+        Student student1 = new Student("Петро", "Шевченко", "ІП-51");
+        Student student2 = new Student("Ірина", "Коваленко", "ІП-52");
+        Student student3 = new Student("Анна", "Петренко", "ІП-67");
         
         library.AddUser(student1);
         library.AddUser(student2);
@@ -27,15 +27,15 @@ class Program
 
         student1.LastName = "Бондаренко"; 
 
-        Book book1 = new Book("Програмування на С#", "Троєлсен Е.", "978-5-8459-2042-1");
-        Book book2 = new Book("Патерни проектування", "Гамма Е.", "978-5-496-00435-0");
-        Book book3 = new Book("Чистий код", "Мартін Р.", "978-5-496-00435-1");
+        Book book1 = new Book("Книжка1", "Джейн Д.", "978-5-8459-2042-1");
+        Book book2 = new Book("Книжка про ООП", "Джон Д.", "978-5-496-00435-0");
+        Book book3 = new Book("Енциклопедія", "Джинні Д.", "978-5-496-00435-1");
         
         library.AddDocument(book1);
         library.AddDocument(book2);
         library.AddDocument(book3);
 
-        book3.Title = "Чистий код (Видання 2-ге)";
+        book3.Title = "Енциклопедія (том 2)";
 
         Console.WriteLine("--- Users (sorted by last name) ---");
         foreach (var user in library.GetUsersSortedByLastName())
@@ -90,9 +90,8 @@ class Program
         Console.WriteLine($"Book '{book1.Title}' has been returned.");
         
         SearchService searchService = new SearchService();
-        library.SearchAndPrintDocuments(searchService, "чистий");
-        library.SearchAndPrintUsers(searchService, "Коваленко");
+        library.SearchAndPrintDocuments(searchService, "Книжка");
+        library.SearchAndPrintUsers(searchService, "Бондаренко");
         
-        Console.ReadLine();
     }
 }
