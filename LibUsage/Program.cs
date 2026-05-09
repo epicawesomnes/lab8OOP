@@ -10,8 +10,7 @@ class Program
     /// <summary>
     /// The main entry point for the application.
     /// </summary>
-    /// <param name="args">The command-line arguments.</param>
-    static void Main(string[] args)
+    static void Main()
     {
         Console.OutputEncoding = System.Text.Encoding.UTF8;
         
@@ -92,6 +91,6 @@ class Program
         SearchService searchService = new SearchService();
         library.SearchAndPrintDocuments(searchService, "Книжка");
         library.SearchAndPrintUsers(searchService, "Бондаренко");
-        
+        library.SearchAndPrintUsers(searchService, "Шевченко");
     }
 }
